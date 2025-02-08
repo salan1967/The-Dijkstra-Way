@@ -13,10 +13,22 @@ public class NodeImpl implements Node {
 
     /*Also, any node fields you want to add for the object should go in this file.  */
 
+    private String name;
+    public NodeImpl(String scdn){
+        name =scdn;
+    }
+
+
     @Override
     public String getName() {
 
-        return null;  //Dummy return value.  Remove when you implement!
+
+
+        return name;  //Dummy return value.  Remove when you implement!
+
     }
+
+
+
 
 }

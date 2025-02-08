@@ -10,5 +10,39 @@ public class EdgeImpl implements Edge {
      */
 
     /*Also, any edge fields you want to add for the object should go in this file.  */
+    private double wt;
+    private String destin;
+    private double dist;
+
+
+    public EdgeImpl (double ww, String des){
+        wt = ww;
+        destin = des;
+        dist = ww;
+    }
+
+
+    @Override
+    public Double getww() {
+        return wt;
+    }
+
+    @Override
+    public String getdest() {
+
+        return destin;
+    }
+
+    @Override
+    public Double getdist() {
+        return dist;
+    }
+
+    @Override
+    public void changedist(double nmbr) {
+        dist += nmbr;
+
+    }
+
 
 }
